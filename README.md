@@ -1,2 +1,2 @@
 # story board
-![image](https://github.com/user-attachments/assets/fe11581b-2bfe-4709-a3ce-9aa471b1c031)
+![image](https://github.com/user-attachments/assets/76d9c577-6924-4f43-a624-7dc1ae1607be)
