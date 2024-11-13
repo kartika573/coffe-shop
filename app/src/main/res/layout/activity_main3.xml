@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7B3F00"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/text_kopi_latte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KOPI LATTE"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/image_kopi_latte"
+        android:layout_width="431dp"
+        android:layout_height="436dp"
+        android:src="@drawable/kopi_latte"
+        android:contentDescription="Kopi Latte Image"
+        app:layout_constraintTop_toBottomOf="@id/text_kopi_latte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button_checkout"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:text="CHECKOUT"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/image_kopi_latte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0522D"
+    tools:context=".MainActivity2">
+
+    <!-- Judul Menu -->
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Item Kopi Latte -->
+    <LinearLayout
+        android:id="@+id/itemKopiLatte"
+        android:layout_width="364dp"
+        android:layout_height="117dp"
+        android:orientation="horizontal"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/menuTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="104dp"
+            android:src="@drawable/kopi_latte"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOPI LATTE"
+                android:textSize="19sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP.30.000"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item Kopi Susu -->
+    <LinearLayout
+        android:id="@+id/itemKopiSusu"
+        android:layout_width="364dp"
+        android:layout_height="117dp"
+        android:orientation="horizontal"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemKopiLatte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="104dp"
+            android:src="@drawable/kopi_susu"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOPI SUSU"
+                android:textSize="19sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP.25.000"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item Kopi Cappuccino -->
+    <LinearLayout
+        android:id="@+id/itemKopiCappuccino"
+        android:layout_width="364dp"
+        android:layout_height="117dp"
+        android:orientation="horizontal"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemKopiSusu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="104dp"
+            android:src="@drawable/kopi_capuchino"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOPI CAPPUCCINO"
+                android:textSize="19sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP.26.000"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item Kopi Espresso -->
+    <LinearLayout
+        android:id="@+id/itemKopiEspresso"
+        android:layout_width="364dp"
+        android:layout_height="117dp"
+        android:orientation="horizontal"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemKopiCappuccino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="90dp"
+            android:src="@drawable/kopi_espresso"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOPI ESPRESSO"
+                android:textSize="19sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP.27.000"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item Kopi Hitam Susu -->
+    <LinearLayout
+        android:id="@+id/itemKopiHitamSusu"
+        android:layout_width="364dp"
+        android:layout_height="117dp"
+        android:orientation="horizontal"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemKopiEspresso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="104dp"
+            android:src="@drawable/kopi_hitamsusu"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOPI HITAM SUSU"
+                android:textSize="19sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP.28.000"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
